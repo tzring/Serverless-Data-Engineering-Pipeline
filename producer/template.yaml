@@ -10,4 +10,5 @@ Resources:
       Description: ''
       MemorySize: 128
       Timeout: 15
+      Role: 'arn:aws:iam::213308386265:role/adminlambda'
       CodeUri: .debug/
