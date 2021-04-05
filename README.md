@@ -9,7 +9,7 @@ Project 4 for IDS721. Reproduce the architecture of the [example serverless data
 - The results are stored in S3 bucket as csv files.
 
 ## Demo
-*[Demo](https://user-images.githubusercontent.com/52186510/113527253-ee3e0700-958a-11eb-9768-2aba551f7388.mp4)
+[Demo](https://user-images.githubusercontent.com/52186510/113527253-ee3e0700-958a-11eb-9768-2aba551f7388.mp4)
 
 ## Reference
 [https://github.com/noahgift/awslambda](https://github.com/noahgift/awslambda)
