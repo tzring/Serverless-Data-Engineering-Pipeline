@@ -8,5 +8,8 @@ Project 4 for IDS721. Reproduce the architecture of the [example serverless data
 - Once SQS received any messages, the consumer function will be triggered. The consumer function will search the university names on Wikipedia and perform a sentiment analysis. For this project, I also added a key phrase detection feature.
 - The results are stored in S3 bucket as csv files.
 
+## Demo
+![alt text](https://user-images.githubusercontent.com/52186510/113527253-ee3e0700-958a-11eb-9768-2aba551f7388.mp4)
+
 ## Reference
 [https://github.com/noahgift/awslambda](https://github.com/noahgift/awslambda)
