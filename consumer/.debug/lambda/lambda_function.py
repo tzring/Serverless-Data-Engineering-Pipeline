@@ -119,15 +119,17 @@ def create_sentiment(row):
     LOG.info(f"Processing {row}")
     comprehend = boto3.client(service_name="comprehend")
     payload = comprehend.detect_sentiment(Text=row, LanguageCode="en")
+    payload2 = comprehend.detect_key_phrases(Text=row, LanguageCode="en")
     LOG.debug(f"Found Sentiment: {payload}")
     sentiment = payload["Sentiment"]
-    return sentiment
+    key = payload2["KeyPhrases"]
+    return sentiment,key
 
 
 def apply_sentiment(df, column="wikipedia_snippit"):
     """Uses Pandas Apply to Create Sentiment Analysis"""
 
-    df["Sentiment"] = df[column].apply(create_sentiment)
+    df["Sent_Key"] = df[column].apply(create_sentiment)
     return df
 
 
